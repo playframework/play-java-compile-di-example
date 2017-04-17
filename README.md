@@ -6,7 +6,7 @@ It is intentionally very simple and basic to show how compile time DI works in P
 
 There is also an [example](https://github.com/playframework/play-java-dagger2-example) using Java compile time DI with [Dagger 2](https://google.github.io/dagger/).
 
-Running
+## Running
 
 Start up the server with sbt:
 
