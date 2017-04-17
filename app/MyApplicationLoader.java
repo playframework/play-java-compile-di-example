@@ -39,37 +39,6 @@ class MyComponents extends play.api.BuiltInComponentsFromContext {
                         ok("Hello")
                 ).build().asScala();
     }
-
-    // Annotation based Java Actions don't work straight out of the box.
-    // To use a generated routes file with Java, you need to wrap the controller
-    // in a handler invoker...
-    /*
-    class Routes(
-      override val errorHandler: play.api.http.HttpErrorHandler,
-      HomeController_0: controllers.HomeController,
-      val prefix: String
-    ) extends GeneratedRouter {
-
-      private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-        HomeController_0.index,
-        HandlerDef(this.getClass.getClassLoader,
-          "router",
-          "controllers.HomeController",
-          "index",
-          Nil,
-          "GET",
-          """ An example controller showing a sample home page""",
-          this.prefix + """"""
-        )
-      )
-
-    def routes: PartialFunction[RequestHeader, Handler] = {
-      case controllers_HomeController_index0_route(params) =>
-        call {
-          controllers_HomeController_index0_invoker.call(HomeController_0.index)
-        }
-      }
-     */
 }
 
 class LoggerConfigurator {
